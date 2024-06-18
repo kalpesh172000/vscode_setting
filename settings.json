@@ -1,0 +1,112 @@
+{
+    "[css]" :{
+        "editor.suggest.insertMode": "replace"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.sortImports": "explicit"
+    }, 
+    "editor.indentSize": "tabSize",
+    "editor.minimap.enabled": false,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+        "before": ["k", "j"],
+        "after": ["<Esc>"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+        },
+        {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+        },
+        {
+        "before": ["K"],
+        "commands": ["lineBreakInsert"],
+        "silent": true
+        },
+        // NAVIGATION
+        // switch b/w buffers
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+
+        // splits
+        { "before": ["leader", "v"], "commands": [":vsplit"] },
+        { "before": ["leader", "s"], "commands": [":split"] },
+
+        // panes
+        {
+        "before": ["leader", "h"],
+        "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+        "before": ["leader", "j"],
+        "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+        "before": ["leader", "k"],
+        "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+        "before": ["leader", "l"],
+        "commands": ["workbench.action.focusRightGroup"]
+        },
+        // NICE TO HAVE
+        { "before": ["leader", "w"], "commands": [":w!"] },
+        { "before": ["leader", "q"], "commands": [":q!"] },
+        { "before": ["leader", "x"], "commands": [":x!"] }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": true,
+        "<C-f>": false
+    },
+
+    //personal settings 
+
+    "editor.lineNumbers": "relative",
+    "window.zoomLevel": 1,
+    "tabnine.experimentalAutoImports": true,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontWeight": "400",
+    "workbench.colorTheme": "One Dark Pro",
+    "oneDarkPro.vivid": true,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "explorer.confirmDragAndDrop": false, //for regular fira code
+    "files.exclude": {
+        "**/*.class": true
+    },
+    "editor.mouseWheelZoom": true,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "php.validate.executablePath": "/opt/lampp/bin/php",
+    "vim.normalModeKeyBindings": [],
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.location": "hidden",
+    "css.completion.completePropertyWithSemicolon": false,
+    "breadcrumbs.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "window.titleBarStyle": "custom",
+    "window.customTitleBar": "developer",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDelete": false,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 120
+}
