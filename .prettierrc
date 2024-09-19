@@ -1,4 +1,7 @@
 {
   "tabWidth": 2,
-  "useTabs": false
+  "useTabs": false,
+  "bracketSpacing": true,
+  "braceStyle": "allman",
+  "organizeImports": false,
 }

@@ -97,7 +97,6 @@
     "window.menuBarVisibility": "toggle",
     "workbench.activityBar.location": "hidden",
     "css.completion.completePropertyWithSemicolon": false,
-    "breadcrumbs.enabled": false,
     "editor.stickyScroll.enabled": false,
     "window.titleBarStyle": "custom",
     "window.customTitleBar": "developer",
