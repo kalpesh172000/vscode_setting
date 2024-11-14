@@ -81,7 +81,7 @@
   "editor.fontLigatures": true,
   "editor.fontFamily": "Fira Code",
   "editor.fontWeight": "400",
-  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorTheme": "Houston",
   "oneDarkPro.vivid": true,
   "terminal.integrated.enableMultiLinePasteWarning": "never",
   "workbench.iconTheme": "vscode-icons",

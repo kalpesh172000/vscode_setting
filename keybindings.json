@@ -13,7 +13,7 @@
     },
     {
         "key": "ctrl+shift+j",
-        "command": "workbench.action.togglePanel"
+        "command": "workbench.action.terminal.toggleTerminal",
     },
     {
         "key": "ctrl+shift+n",
@@ -26,14 +26,14 @@
         "when": "terminalFocus"
     },
     {
-        "key":"tab",
-        "command":"tab",
-        "when":"editorTextFocus && !editorTabMovesFocus"
+        "key": "tab",
+        "command": "tab",
+        "when": "editorTextFocus && !editorTabMovesFocus"
     },
     {
-        "key":"shift+tab",
-        "command":"outdent",
-        "when":"editorTextFocus && !editorTabMovesFocus"
+        "key": "shift+tab",
+        "command": "outdent",
+        "when": "editorTextFocus && !editorTabMovesFocus"
     },
     //file explorer
     {
@@ -68,21 +68,30 @@
     {
         "key": "c",
         "command": "filesExplorer.copy",
-        "when":"filesExplorerFocus && !inputFocus"
+        "when": "filesExplorerFocus && !inputFocus"
     },
     {
         "key": "p",
         "command": "filesExplorer.paste",
-        "when":"filesExplorerFocus && !inputFocus"
+        "when": "filesExplorerFocus && !inputFocus"
     },
     {
         "key": "x",
         "command": "filesExplorer.cut",
-        "when":"filesExplorerFocus && !inputFocus"
+        "when": "filesExplorerFocus && !inputFocus"
     },
     {
         "command": "editor.action.inlineSuggest.commit",
         "key": "alt+;"
     },
+    {
+        "key": "ctrl+alt+b",
+        "command": "workbench.action.chat.openEditSession",
+        "when": "chatEditingParticipantRegistered && chatIsEnabled && view != 'workbench.panel.chat.view.edits'"
+    },
+    {
+        "key": "ctrl+shift+i",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    }
 ]
-
